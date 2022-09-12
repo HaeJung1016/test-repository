@@ -49,10 +49,11 @@ override func viewDidAppear(_ animated: Bool) {
 
 ```Swift
 override func viewDidAppear(_ animated: Bool) {
-	super.viewDidAppear(animated)
-	container.frame.origin.y = screenHeight
-	let y = screenHeight - self.container.frame.height - self.view.safeAreaInsets.bottom
+    super.viewDidAppear(animated)
+    container.frame.origin.y = screenHeight
+    let y = screenHeight - self.container.frame.height - self.view.safeAreaInsets.bottom
         
-	backView.toggle(isMovingToHide: false, y: y, moveView: container)
+    backView.toggle(isMovingToHide: false, y: y, moveView: container)
+    // 테스트
 }
 ```
