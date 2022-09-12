@@ -54,6 +54,6 @@ override func viewDidAppear(_ animated: Bool) {
     let y = screenHeight - self.container.frame.height - self.view.safeAreaInsets.bottom
         
     backView.toggle(isMovingToHide: false, y: y, moveView: container)
-    // 테스트
+    // 이 줄에 suggestion 기능을 사용해보겠습니다.
 }
 ```
