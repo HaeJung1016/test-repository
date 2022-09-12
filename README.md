@@ -24,7 +24,7 @@ private var opacity: CGFloat = 0.7
 // BackgroundOpaqueView의 show / hide animation의 duration
 private var animationDuration: CGFloat = 0.2
 ```
-- IB를 통한 생성 미지원
+- IB를 통한 생성 미지원 <- 여기를 수정해보겠습니다.
 
 <br>
 
@@ -49,10 +49,11 @@ override func viewDidAppear(_ animated: Bool) {
 
 ```Swift
 override func viewDidAppear(_ animated: Bool) {
-	super.viewDidAppear(animated)
-	container.frame.origin.y = screenHeight
-	let y = screenHeight - self.container.frame.height - self.view.safeAreaInsets.bottom
+    super.viewDidAppear(animated)
+    container.frame.origin.y = screenHeight
+    let y = screenHeight - self.container.frame.height - self.view.safeAreaInsets.bottom
         
-	backView.toggle(isMovingToHide: false, y: y, moveView: container)
+    backView.toggle(isMovingToHide: false, y: y, moveView: container)
+    // 이 줄에 suggestion 기능을 사용해보겠습니다.
 }
 ```
