@@ -24,7 +24,7 @@ private var opacity: CGFloat = 0.7
 // BackgroundOpaqueView의 show / hide animation의 duration
 private var animationDuration: CGFloat = 0.2
 ```
-- IB를 통한 생성 미지원
+- IB를 통한 생성 미지원 <- 여기를 수정해보겠습니다.
 
 <br>
 
